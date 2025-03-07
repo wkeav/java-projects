@@ -12,7 +12,7 @@ To get started with any project in this repository:
   * Command-line interface or an IDE that supports Java
 
     
-# Projects List & how to use them
+# Project List & how to use them
 
 ## Store:
 A fully dynamic inventory management system that allows users to:
@@ -22,9 +22,21 @@ A fully dynamic inventory management system that allows users to:
   * Display the current inventory
 
 ### How to Use the Store Project
-  * Navigate to the Store Directory
-  * Compile the Java files:
+  1. Navigate to the Store Directory
+  2. Compile the Java files:
   ```
     javac Store/*.java
   ```
+  3. Run the main program:
+  ```
+     java Store.Main
+  ```
+  4. Follow the on-screen prompts to:
+      * Set up your store name and product type
+      * Add products with names, prices, and quantities
+      * Manage inventory through the interactive menu system
+      * Sell products and track stock levels
+    
+---
+This repository is maintained by Wkeav and serves as a collection of Java programming examples and practical applications.
 
