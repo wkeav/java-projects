@@ -7,7 +7,7 @@ public class Calculator {
     //constructor
     public Calculator(){}
 
-    //basic functions
+    //basic operations
     public double add(double a, double b){
         return a + b;
     }
@@ -28,13 +28,6 @@ public class Calculator {
     }
 
     //scientific functions 
-    public double modulo(double a, double b){
-        if (b == 0) {
-            throw new ArithmeticException("Modulo by zero is not allowed");
-        }
-        return a % b;
-    }
-
     public double square(double a){
         return a * a; 
     }
@@ -48,6 +41,13 @@ public class Calculator {
 
     public double power(double base, double exponent){
         return Math.pow(base, exponent);
+    }
+
+    public double modulo(double a, double b){
+        if (b == 0) {
+            throw new ArithmeticException("Modulo by zero is not allowed");
+        }
+        return a % b;
     }
 
     //trigonometric functions
