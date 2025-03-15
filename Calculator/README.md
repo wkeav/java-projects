@@ -12,11 +12,11 @@ This Java-based calculator application provides a comprehensive set of mathemati
     ```
         javac Calculator/*.java
     ```
-  3. Run the application
+  4. Run the application
     ```
         java Calculator.Main
     ```
-  4. Follow the on-screen menu to select operations:
+  5. Follow the on-screen menu to select operations:
         * Enter the number corresponding to the operation category
         * Follow prompts to input values
         * View results immediately
