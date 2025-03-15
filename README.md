@@ -35,3 +35,6 @@ A fully dynamic inventory management system that allows users to:
 ---
 This repository is maintained by Wkeav and serves as a collection of Java programming examples and practical applications.
 
+# License
+This project is open source and available under the MIT License.
+
