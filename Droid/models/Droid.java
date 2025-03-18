@@ -1,4 +1,7 @@
 package Droid.models;
+/*
+  * Parent of all droid classes
+*/
 
 public abstract class Droid {
     protected String name;

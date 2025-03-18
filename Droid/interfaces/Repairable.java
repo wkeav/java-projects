@@ -1,5 +1,5 @@
 package Droid.interfaces;
 
 public interface Repairable {
-    void repairSystem(String droidName);
+    void repairSystem(String systemName);
 }
