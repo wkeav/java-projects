@@ -53,7 +53,7 @@ public abstract class Droid {
       }
     }
 
-    public void repair(int amount){
+    public void repairHealth(int amount){
       if (healthStatus + amount > 100){
         healthStatus = 100;
       }else {
