@@ -92,6 +92,15 @@ public class ProtocolDroid extends Droid implements Protocol {
         consumeBattery(10);
     }
 
+    //skill advancement
+    public void studyDiplomacy(){
+        System.out.println(name + " is studying diplomatic protocols.");
+        diplomacySkill += 10;
+        if (diplomacySkill > 100) diplomacySkill = 100;
+        System.out.println("Diplomacy skill has increased to " + diplomacySkill);
+        consumeBattery(30);
+    }
+
     //to string method
     @Override
     public String toString() {
