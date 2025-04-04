@@ -57,6 +57,7 @@ public class Product {
             this.quantity -= amount;
             return true;
         }
+        //
         return false;
     }
 
