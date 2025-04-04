@@ -1,7 +1,5 @@
-package Droid.models;
-/*
-  * Parent of all droid classes
-*/
+package Droid.models; 
+
 
 public abstract class Droid {
     protected String name;
