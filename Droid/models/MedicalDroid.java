@@ -8,7 +8,7 @@ public class MedicalDroid extends Droid implements Medical {
     private int surgerySkill; 
     private int medicalSkill; 
 
-    //constructor
+    // Constructor
     public MedicalDroid(String serialNumber, String name){
         super(serialNumber, name);
         //default skill set
@@ -16,7 +16,7 @@ public class MedicalDroid extends Droid implements Medical {
         this.medicalSkill = 70;
     }
 
-    //implement abstract method for this drone
+    // Implement abstract method for this drone
     @Override
     public void performPrimaryFunction(){
         if (!isActivated) {
@@ -25,7 +25,7 @@ public class MedicalDroid extends Droid implements Medical {
         }
 
         System.out.println(name + " primary function is to provide medical assistance.");
-        consumeBattery(5); //consume 5% when give its primary function 
+        consumeBattery(5); // Consume 5% when give its primary function 
     }
 
     public int getSurgerySkill(){
@@ -52,7 +52,7 @@ public class MedicalDroid extends Droid implements Medical {
             System.out.println(name + " is not activated.");
             return;
         }
-        //requirement
+        // Requirement
         if (surgerySkill < 30) {
             System.out.println(name + " does not have sufficient surgery skill for this procedure.");
             return;
@@ -63,7 +63,7 @@ public class MedicalDroid extends Droid implements Medical {
 
     }
 
-    //implement medical interface 
+    // Implement medical interface 
     @Override
     public void patientDiagnosis(String patientName){
         if (!isActivated) {
@@ -87,7 +87,7 @@ public class MedicalDroid extends Droid implements Medical {
         consumeBattery(15); //consume 15% battery 
     }
 
-    //updating medical & surgery skill bases on latest program 
+    // Updating medical & surgery skill bases on the latest program 
     public void upgradeMedicalDatabase(){
         System.out.println(name + " is upgrading its medical database with latest treatments.");
         medicalSkill += 5;
