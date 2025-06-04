@@ -6,7 +6,7 @@ public class Product {
     protected double price;
     protected int quantity;
     
-    // constructors method
+    // Constructors method
     public Product(){
         this.name = " ";
         this.price = 0.0;
@@ -19,7 +19,7 @@ public class Product {
         this.quantity = quantity;
     }
 
-     // getters and setters
+     // Getters and setters
     public String getName() {
         return name;
     }
@@ -46,12 +46,12 @@ public class Product {
         this.quantity = quantity;
     }
 
-    // add to quantity method
+    // Add to quantity method
     public void addQuantity(int amount){
         this.quantity += amount; 
     }
 
-    // remove from quantity method
+    // Remove from quantity method
     public boolean removeQuantity(int amount){
         if(amount > 0 && quantity >= amount){
             this.quantity -= amount;
