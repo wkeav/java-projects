@@ -9,7 +9,7 @@ public class HandleHistory extends Calculator {
     private List<String> history = new ArrayList<>();
     private static final int MAX_HISTORY = 10;
 
-    //memory methods
+    // Memory methods
     public void memoryClear() {
         memory = 0;
     }
@@ -30,7 +30,7 @@ public class HandleHistory extends Calculator {
         memory -= value;
     }
 
-    //history methods
+    // History methods
     public void addToHistory(String operation, double result){
         history.add(operation + " = " + result);
         if(history.size() > MAX_HISTORY){
@@ -46,7 +46,7 @@ public class HandleHistory extends Calculator {
         history.clear();
     }
 
-    //override calculator method to track history 
+    // Calculator method to track history 
     @Override
     public double add(double a, double b){
         double result = super.add(a, b);
@@ -78,7 +78,7 @@ public class HandleHistory extends Calculator {
         return result;
     }
 
-    //scientific operations
+    // Scientific operations
     @Override
     public double square(double a) {
         double result = super.square(a);
@@ -107,7 +107,7 @@ public class HandleHistory extends Calculator {
         return result;
     }
 
-    //Trigonometric functions
+    // Trigonometric functions
     @Override
     public double sin(double angleInRadians) {
         double result = super.sin(angleInRadians);
@@ -129,7 +129,7 @@ public class HandleHistory extends Calculator {
         return result;
     }
 
-    //logarithmic functions
+    // Logarithmic functions
     @Override
     public double log(double a) {
         double result = super.log(a);
