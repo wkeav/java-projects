@@ -4,10 +4,10 @@ public class Calculator {
     protected double a;
     protected double b;
 
-    //constructor
+    // Constructor
     public Calculator(){}
 
-    //basic operations
+    // Basic operations
     public double add(double a, double b){
         return a + b;
     }
@@ -27,7 +27,7 @@ public class Calculator {
         return a / b;
     }
 
-    //scientific functions 
+    // Scientific functions 
     public double square(double a){
         return a * a; 
     }
@@ -50,7 +50,7 @@ public class Calculator {
         return a % b;
     }
 
-    //trigonometric functions
+    // Trigonometric functions
     public double sin(double angleInRadians) {
         return Math.sin(angleInRadians);
     }
@@ -84,4 +84,3 @@ public class Calculator {
 
 
 }
-//
