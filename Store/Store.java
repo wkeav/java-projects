@@ -2,14 +2,13 @@ package Store;
 import java.util.ArrayList;
 import java.util.List;
 public class Store {
-    // instance fields
     protected String productType;
     protected double price;
     protected List<Product> inventory; 
 
     public double tax = 0.08;
     
-    // constructor method
+    // Constructor
     public Store (){
         this.price = 0;
         this.productType = null;
@@ -26,7 +25,7 @@ public class Store {
         this.inventory = new ArrayList<>();
     }
 
-    // inventory management methods 
+    // Inventory management methods 
     public void addProduct(String name, double price, int quantity){
         inventory.add(new Product(name,price,quantity));
     }
@@ -112,29 +111,24 @@ public class Store {
             }
         }
     }
-    // advertise method
     public void advertise() {
         String message = "Selling " + productType + "!";
         System.out.println(message);
     }
     
-    // greetCustomer method
     public void greetCustomer(String customerName){
         System.out.println("Welcome to the store, " + customerName + "!");
     }
 
-    // increased price method 
     public void increasePrice(double priceToAdd){
         double newPrice = price + priceToAdd;
         price = newPrice;
     }
     
-    // get price
     public double getPrice(){
         return price;
     }
 
-    // new price with tax  method 
     public double getPriceWithTax(){
         double totalPrice = price + price * tax;
         return totalPrice;
