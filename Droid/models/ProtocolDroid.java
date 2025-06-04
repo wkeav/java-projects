@@ -12,7 +12,7 @@ public class ProtocolDroid extends Droid implements Protocol {
     private List<String> languageKnown;
     private int diplomacySkill;
 
-    //constructor 
+    // Constructor 
     public ProtocolDroid(String serialNumber, String name){
         super(serialNumber, name);
         this.diplomacySkill = 70; 
@@ -25,7 +25,7 @@ public class ProtocolDroid extends Droid implements Protocol {
 
     }
 
-    //implement abstract method for this drone
+    // Implement abstract method for this drone
     @Override
     public void performPrimaryFunction(){
         if (!isActivated) {
@@ -37,7 +37,7 @@ public class ProtocolDroid extends Droid implements Protocol {
         consumeBattery(5);
     }
 
-    //getters 
+    // Getter & setter
     public List<String> getLanguagesKnown(){
         return new ArrayList<>(languageKnown);
     }
@@ -49,7 +49,6 @@ public class ProtocolDroid extends Droid implements Protocol {
         return languageKnown.size();
     }
 
-    //language method
     public void learnLanguage(String language){
         if(!languageKnown.contains(language)){
             languageKnown.add(language);
@@ -60,7 +59,7 @@ public class ProtocolDroid extends Droid implements Protocol {
         }
     }
 
-    //implement interface method
+    // Implement interface method
     @Override
     public void translate(String fromLanguage, String toLanguage, String message){
         if (!isActivated) {
@@ -68,7 +67,6 @@ public class ProtocolDroid extends Droid implements Protocol {
             return;
         }
         
-        //have to know both language to translate
         if(languageKnown.contains(fromLanguage) && languageKnown.contains(toLanguage)){
             System.out.println(name + " translates from " + fromLanguage + " to " + toLanguage + ":");
             System.out.println("Original: " + message);
@@ -92,7 +90,7 @@ public class ProtocolDroid extends Droid implements Protocol {
         consumeBattery(10);
     }
 
-    //skill advancement
+    // Skill advancement
     public void studyDiplomacy(){
         System.out.println(name + " is studying diplomatic protocols.");
         diplomacySkill += 10;
@@ -101,7 +99,6 @@ public class ProtocolDroid extends Droid implements Protocol {
         consumeBattery(30);
     }
 
-    //to string method
     @Override
     public String toString() {
         return super.toString() + "\n" +
