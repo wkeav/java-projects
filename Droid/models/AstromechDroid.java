@@ -10,7 +10,7 @@ public class AstromechDroid extends Droid implements Repairable{
     private int repairSkill; 
     private boolean isPluggedIntoShip; 
 
-    //constructor
+    // Constructor
     public AstromechDroid(String serialNumber, String name){
         super(serialNumber, name);
         this.isPluggedIntoShip = false;
@@ -19,7 +19,7 @@ public class AstromechDroid extends Droid implements Repairable{
         this.repairSkill = 70; 
     }
 
-    //implement abstract method
+    // Implement abstract method
     @Override
     public void performPrimaryFunction(){
         if (!isActivated) {
@@ -63,7 +63,7 @@ public class AstromechDroid extends Droid implements Repairable{
         return repairSkill;
     }
 
-    //implement interface methods
+    // Implement interface methods
     @Override
     public void repairSystem(String systemName){
         if (!isActivated) {
