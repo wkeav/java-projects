@@ -69,7 +69,7 @@ public class Main {
             }
             
             switch(choice){
-                case 1: // add new product 
+                case 1: 
                     System.out.println("Enter product name: ");
                     String name = scanner.nextLine();
 
@@ -102,7 +102,7 @@ public class Main {
                     System.out.println("Product added successfully!");
                     break;
 
-                case 2: // remove a product
+                case 2:
                     System.out.println("Enter the product name to be remove: ");
                     String product = scanner.nextLine();
 
@@ -113,7 +113,7 @@ public class Main {
                     }
                     break;
 
-                case 3: // search a product
+                case 3: 
                     System.out.println("Enter the product name to search: ");
                     String productToSearch = scanner.nextLine();
 
@@ -121,7 +121,7 @@ public class Main {
                     System.out.println(result);
                     break;
 
-                case 4:  // sell a product 
+                case 4:  // Sell a product 
                     System.out.println("Enter the product name to be sell: ");
                     String productToSell = scanner.nextLine();
 
@@ -146,7 +146,7 @@ public class Main {
                     }
                     break;
 
-                case 5: // restore a product 
+                case 5: // Restore a product 
                     System.out.println("Enter the product name to restock: ");
                     String restock = scanner.nextLine();
 
@@ -168,11 +168,11 @@ public class Main {
                     System.out.println("Product restocked successfully!");
                     continue;
                 
-                case 6: // display inventory
+                case 6: 
                     store.displayInventory();
                     break;
                 
-                case 7: // exist 
+                case 7: 
                     System.out.println("Thank you for using the Store Management System. Goodbye!");
                     running = false;
                     break;
