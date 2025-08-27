@@ -11,7 +11,7 @@ public abstract class Droid {
     //abstract method that each droid must implement 
     public abstract void performPrimaryFunction();
   
-    //constructor
+
     public Droid(String serialNumber, String name){
       this.serialNumber = serialNumber;
       this.name = name;
