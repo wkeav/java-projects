@@ -4,7 +4,7 @@ public class Calculator {
     protected double a;
     protected double b;
 
-    // Constructor
+    // Constructo
     public Calculator(){}
 
     // Basic operations
