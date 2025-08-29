@@ -9,7 +9,7 @@ public class HandleHistory extends Calculator {
     private List<String> history = new ArrayList<>();
     private static final int MAX_HISTORY = 10;
 
-    // Memory methods
+    // Memory method
     public void memoryClear() {
         memory = 0;
     }
