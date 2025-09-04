@@ -11,8 +11,6 @@ public class Main {
         System.out.println("=== Welcome to Ultra Droid System! ===");
 
         // AstromechDroid r2d2 = new AstromechDroid("R2-D2-001", "R2-D2");
-
-        //activate 
         // r2d2.activate();
         // System.out.println(r2d2); //toString method inheritance 
         // r2d2.performPrimaryFunction();
