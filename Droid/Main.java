@@ -12,7 +12,7 @@ public class Main {
 
         // AstromechDroid r2d2 = new AstromechDroid("R2-D2-001", "R2-D2");
         // r2d2.activate();
-        // System.out.println(r2d2); //toString method inheritance 
+        // System.out.println(r2d2); //toString method inheritanc
         // r2d2.performPrimaryFunction();
         // r2d2.plugIntoShip();
         // r2d2.repairSystem("Hyperdrive");
