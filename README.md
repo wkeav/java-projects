@@ -31,6 +31,9 @@ A fully dynamic inventory management system that allows users to:
   ```
      java Store.Main
   ```
+
+### Author:
+Astra Nguyen
     
 ---
 This repository is maintained by Wkeav and serves as a collection of Java programming examples and practical applications.
