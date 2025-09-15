@@ -3,7 +3,7 @@ This repository contains various Java projects. The projects demonstrate object-
 
 # Getting Started 
 To get started with any project in this repository:
-  1. Clone the repository
+  1. Clone the repository.
   2. Navigate to the project folder you're interested in
   3. Compile and run the Java files as described in the project-specific instructions
 
