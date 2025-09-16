@@ -14,7 +14,7 @@ public class Main {
         // r2d2.activate();
         // System.out.println(r2d2); //toString method inheritanc
         // r2d2.performPrimaryFunction();
-        // r2d2.plugIntoShip()
+        // r2d2.plugIntoShip();
         // r2d2.repairSystem("Hyperdrive");
         // System.out.println(r2d2);
         // r2d2.getRepairSkill();
