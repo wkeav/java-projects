@@ -8,7 +8,7 @@ public abstract class Droid {
     protected int healthStatus;
     protected boolean isActivated;
 
-    //abstract method that each droid must implement 
+    //abstract method that each droid must impleme
     public abstract void performPrimaryFunction();
   
 
