@@ -3,7 +3,7 @@ A fully dynamic inventory management system that allows users to:
   * Add, remove, and search for products
   * Sell products and track inventory levels
   * Restock products when supplies are low
-  * Display the current inventory
+  * Display the current inventory.
 
 ## How to Use the Store Project
   1. Navigate to the Store Directory
