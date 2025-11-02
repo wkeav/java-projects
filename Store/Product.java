@@ -6,7 +6,7 @@ public class Product {
     protected double price;
     protected int quantity;
     
-    // Constructors method
+    // Constructors method.
     public Product(){
         this.name = " ";
         this.price = 0.0;
